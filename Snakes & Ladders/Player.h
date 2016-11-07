@@ -14,7 +14,12 @@
 @property NSDictionary *gameLogic;
 @property NSString *output;
 @property BOOL gameOver;
+@property NSString *name;
+
+- (instancetype)initWithName:(NSString *) playerName;
 
 - (void) roll;
+
+
 
 @end

@@ -10,19 +10,19 @@
 
 @implementation Player
 
-- (instancetype)init
-{
+- (instancetype)initWithName:(NSString *) playerName {
     self = [super init];
     if (self) {
         _currentSquare = 0;
         _gameLogic = @{@4:@14, @9:@31, @17:@7, @20:@38, @28:@84, @40:@59, @51:@67, @63:@81, @64:@60, @89:@26, @95:@75, @99:@78};
         _gameOver = FALSE;
+        _name = playerName;
     }
     return self;
 }
 
 - (void) roll {
-    int roll = 17;//arc4random_uniform(6) + 1;
+    int roll = arc4random_uniform(6) + 1;
     self.currentSquare += roll;
     NSString *snakeOrLadder = @"";
     if ([self.gameLogic objectForKey:[NSNumber numberWithLong:self.currentSquare]]) {

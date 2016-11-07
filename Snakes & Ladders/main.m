@@ -7,19 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Player.h"
+#import "PlayerManager.h"
+#import "InputManager.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        Player *player1 = [Player new];
-        while (!player1.gameOver) {
-            char str[100];
-            fgets (str, 100, stdin);
-            NSString *input = [[NSString alloc] initWithUTF8String:str];
-            input = [input stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-            if ([[input lowercaseString] isEqualToString:@"roll"] || [[input lowercaseString] isEqualToString:@"r"]) {
-                [player1 roll];
-            }
+        NSLog(@"\nWelcome to Snakes and Ladders");
+        PlayerManager *pM = [PlayerManager new];
+        [pM createPlayers];
+        while (pM.gameOn) {
+            [pM roll];
+   //         if ([[input lowercaseString] isEqualToString:@"roll"] || [[input lowercaseString] isEqualToString:@"r"]) {
+   //             [player roll];
+            
         }
         NSLog(@"Good game, y'all");
     }

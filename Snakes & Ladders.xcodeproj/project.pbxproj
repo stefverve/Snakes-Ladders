@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		E2B9714B1DCFE66400DA3E34 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B9714A1DCFE66400DA3E34 /* main.m */; };
 		E2B971531DCFE77600DA3E34 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B971521DCFE77600DA3E34 /* Player.m */; };
+		E2B971561DD0009900DA3E34 /* PlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B971551DD0009900DA3E34 /* PlayerManager.m */; };
+		E2B971591DD0059500DA3E34 /* InputManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B971581DD0059500DA3E34 /* InputManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +30,10 @@
 		E2B9714A1DCFE66400DA3E34 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E2B971511DCFE77600DA3E34 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
 		E2B971521DCFE77600DA3E34 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		E2B971541DD0009900DA3E34 /* PlayerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerManager.h; sourceTree = "<group>"; };
+		E2B971551DD0009900DA3E34 /* PlayerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerManager.m; sourceTree = "<group>"; };
+		E2B971571DD0059500DA3E34 /* InputManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputManager.h; sourceTree = "<group>"; };
+		E2B971581DD0059500DA3E34 /* InputManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +67,10 @@
 			isa = PBXGroup;
 			children = (
 				E2B9714A1DCFE66400DA3E34 /* main.m */,
+				E2B971541DD0009900DA3E34 /* PlayerManager.h */,
+				E2B971551DD0009900DA3E34 /* PlayerManager.m */,
+				E2B971571DD0059500DA3E34 /* InputManager.h */,
+				E2B971581DD0059500DA3E34 /* InputManager.m */,
 				E2B971511DCFE77600DA3E34 /* Player.h */,
 				E2B971521DCFE77600DA3E34 /* Player.m */,
 			);
@@ -124,8 +134,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2B971591DD0059500DA3E34 /* InputManager.m in Sources */,
 				E2B971531DCFE77600DA3E34 /* Player.m in Sources */,
 				E2B9714B1DCFE66400DA3E34 /* main.m in Sources */,
+				E2B971561DD0009900DA3E34 /* PlayerManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
